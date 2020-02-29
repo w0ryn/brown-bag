@@ -1,0 +1,23 @@
+# python
+*.pyc
+*.cpython
+__pycache__/
+
+# JavaScript / NodeJS
+/dist
+/tmp
+node_modules/
+
+# vim
+.*.swp
+
+# vsode
+.vscode/
+
+# jetbrains
+.idea/
+.project/
+
+# osx
+.DS_Store
+Thumbs.db
