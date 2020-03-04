@@ -16,6 +16,7 @@ Given a particular string, this function is capable of producing dynamic replace
 
 The challenge is to implement a simple string replacement function/method which can update a string's values based on a lookup dictionary.
 Values to be replaced will be surrounded by angle brackets in the original string.
+
 For example, given the lookup dictionary `{ 'friend_name' : 'Dave' } `, the string `'Hello, <friend_name>!'` would be replaced with `'Hello, Dave!'`.
 
 
