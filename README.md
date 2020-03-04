@@ -11,4 +11,5 @@ If I have multiple working solutions to a problem, I will comment in their respe
 
 ## Table of Contents
 - [Remove Duplicate Words](./duplicate-words/PROBLEM.md)
+- [String Replacement Dictionary](./dictionary-replacer/PROBLEM.md)
 - [Roman Numeral Converter](./roman-numerals/PROBLEM.md)
