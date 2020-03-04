@@ -10,4 +10,5 @@ The initial challenge is to pass all minimum test cases within the time-limit; h
 If I have multiple working solutions to a problem, I will comment in their respective asymptotic running-time.
 
 ## Table of Contents
+- [Remove Duplicate Words](./duplicate-words/PROBLEM.md)
 - [Roman Numeral Converter](./roman-numerals/PROBLEM.md)
