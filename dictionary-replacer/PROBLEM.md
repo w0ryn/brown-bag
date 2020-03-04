@@ -5,10 +5,10 @@
 > 
 > **Print formatted data to `stdout`**
 >
-> Writes the C string pointed by `format` to the standard output.
-> If `format` includes *`format` specifiers* (subsequences beginning with '%'), the additional arguments following `format` are formatted and inserted in the resulting string replacing their respective specifiers.
+> Writes the C string pointed by *format* to the standard output.
+> If *format* includes *format specifiers* (sub-sequences beginning with `%`), the additional arguments following *format* are formatted and inserted in the resulting string replacing their respective specifiers.
 >
-> [`printf()` Documentation (cplusplus.com)](cplusplus.com/reference/cstdio/printf/)
+> [`printf()` Documentation (cplusplus.com)](https://cplusplus.com/reference/cstdio/printf/)
 
 ## Minimum Condition
 Most languages have some implementation of the `printf` (or similarly capable function).
