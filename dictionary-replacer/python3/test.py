@@ -1,5 +1,5 @@
 from unittest import TestCase
-from local_utils import Test
+from utils import Test
 from solution import Solution
 
 

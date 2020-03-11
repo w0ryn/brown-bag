@@ -1,4 +1,4 @@
-const Utils = require('./local_utils.js').utils;
+const Utils = require('./utils.js').utils;
 const Solution = require('./solution.js').solution;
 
 // assertion facility
