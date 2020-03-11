@@ -1,4 +1,7 @@
-const Test = {
+const Utils = {};
+exports.utils = Utils;
+
+Utils.test = {
   runSuite: (suiteName, suite, bonusSuiteName, bonusSuite) => {
     const SEP1 = '------------------------------------------------';
     const SEP2 = '================================================';
@@ -26,7 +29,7 @@ const Test = {
 
       if (!!bonusSuite) {
         console.log('Minimum conditions met! Checking bonus conditions...\n\n');
-        Test.runSuite(bonusSuiteName, bonusSuite);
+        Utils.test.runSuite(bonusSuiteName, bonusSuite);
       } else {
         console.log('OK\n');
       }
@@ -38,24 +41,22 @@ const Test = {
     }
   },
 
+  assertEqual: (value, expected) => {
+    if (value !== expected)
+      throw new Error(`assertEqual():::Expected ${value} to equal ${expected}`);
+  },
+
+  assertTrue:  (value) => { Utils.test.assertEqual(value, true); },
+
   assertTruthy: (value) => {
     if (!value)
       throw new Error(`assertTruthy():::Expected ${value} to be truthy`);
   },
 
+  assertFalse: (value) => { Utils.test.assertEqual(value,false); },
+
   assertFalsey: (value) => {
     if (!!value)
       throw new Error(`assertFalsey():::Expected ${value} to be falsey`);
   },
-
-  assertEqual: (value, expected) => {
-    if (value !== expected)
-      throw new Error(`assertEqual():::Expected ${value} to equal ${expected}`);
-  }
 }
-
-const assertEqual  = Test.assertEqual;
-const assertTrue   = (value) => { Test.assertEqual(value, true); };
-const assertFalse  = (value) => { Test.assertEqual(value, false); };
-const assertTruthy = Test.assertTruthy;
-const assertFalsey = Test.assertFalsey;
