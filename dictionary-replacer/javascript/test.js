@@ -15,7 +15,7 @@ Utils.test.runSuite(
       const phrase = '';
       const dictionary = {};
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, '');
     },
@@ -24,7 +24,7 @@ Utils.test.runSuite(
       const phrase = 'There are no replacements to be made here';
       const dictionary = {};
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, phrase);
     },
@@ -35,7 +35,7 @@ Utils.test.runSuite(
         a: 'successful',
       };
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, 'successful');
     },
@@ -47,7 +47,7 @@ Utils.test.runSuite(
         '2': 'Idaho',
       };
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, 'I think Nate lives in Idaho.');
     },
@@ -59,7 +59,7 @@ Utils.test.runSuite(
         state: 'Utah',
       }
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, 'I want to see my friend Colton. Colton lives in Utah.');
     }
@@ -72,7 +72,7 @@ Utils.test.runSuite(
         'b': 'non-null',
       }
 
-      result = Solution.dictionaryReplacer(phrase, dictionary);
+      const result = Solution.dictionaryReplacer(phrase, dictionary);
 
       assertEqual(result, '<a>, non-null')
     },
