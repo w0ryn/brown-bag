@@ -10,7 +10,7 @@ const assertFalsey = Utils.test.assertFalsey;
 
 
 Utils.test.runSuite(
-  'MinimumRequiredTests', [
+  'Dictionary Replacer Minimum Required Tests', [
     function dictReplacerEmptyPhrase() {
       const phrase = '';
       const dictionary = {};
@@ -65,7 +65,7 @@ Utils.test.runSuite(
     }
   ],
 
-  'BonusTests', [
+  'Dictionary Replacer Bonus Tests', [
     function dictReplacerUnknownValue() {
       const phrase = '<a>, <b>'
       const dictionary = {

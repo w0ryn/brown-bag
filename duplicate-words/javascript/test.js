@@ -10,7 +10,7 @@ const assertFalsey = Utils.test.assertFalsey;
 
 
 Utils.test.runSuite(
-  'MinimumRequiredTests', [
+  'Duplicate Word Remover Minimum Required Tests', [
     function removeDuplicateWordsNonExist() {
       const phrase = 'alpha';
 
