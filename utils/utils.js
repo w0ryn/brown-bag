@@ -42,21 +42,29 @@ Utils.test = {
   },
 
   assertEqual: (value, expected) => {
-    if (value !== expected)
+    if (value !== expected) {
+      expected = typeof expected == 'string' ? "'" + expected + "'" : expected;
+      value = typeof value == 'string' ? "'" + value + "'" : value;
+
       throw new Error(`assertEqual():::Expected ${value} to equal ${expected}`);
+    }
   },
 
   assertTrue:  (value) => { Utils.test.assertEqual(value, true); },
 
   assertTruthy: (value) => {
-    if (!value)
+    if (!value) {
+      value = typeof value == 'string' ? "'" + value + "'" : value;
       throw new Error(`assertTruthy():::Expected ${value} to be truthy`);
+    }
   },
 
   assertFalse: (value) => { Utils.test.assertEqual(value,false); },
 
   assertFalsey: (value) => {
-    if (!!value)
+    if (!!value) {
+      value = typeof value == 'string' ? "'" + value + "'" : value;
       throw new Error(`assertFalsey():::Expected ${value} to be falsey`);
+    }
   },
 }
